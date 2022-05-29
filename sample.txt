@@ -1,6 +1,16 @@
-//const [page] = await browser.pages();
-const page = await browser.newPage();
-await page.goto('https://news.ycombinator.com', {
-  waitUntil: 'networkidle2',
-});
+const [page] = await browser.pages();
+//const page = await browser.newPage();
+
+//await page.goto('https://news.ycombinator.com', {
+//  waitUntil: 'networkidle2',
+//});
+
+await page.goto('https://chercher.tech/practice/popups')
+
+const [fileChooser] = await Promise.all([
+  page.waitForFileChooser(),
+  page.click("[name='upload']"),
+]);
+await fileChooser.accept(['/Users/hai.nguyen/Downloads/gen5.png']);
+    
 await page.close();
