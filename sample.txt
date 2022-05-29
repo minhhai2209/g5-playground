@@ -1,3 +1,4 @@
+console.log('start');
 console.log(browser.pages());
 const [page] = await browser.pages();
 await page.goto('https://news.ycombinator.com', {
