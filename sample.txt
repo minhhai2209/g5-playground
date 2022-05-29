@@ -7,7 +7,7 @@ await page.goto('https://news.ycombinator.com', {
 });
 */
 
-/*
+
 await page.goto('https://chercher.tech/practice/popups')
 
 const [fileChooser] = await Promise.all([
@@ -15,7 +15,7 @@ const [fileChooser] = await Promise.all([
   page.click("[name='upload']"),
 ]);
 await fileChooser.accept(['/Users/hai.nguyen/Downloads/gen5.png']);
-*/
+
 
 /*
 // Emitted when the DOM is parsed and ready (without waiting for resources)
