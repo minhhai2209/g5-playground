@@ -17,6 +17,7 @@ const [fileChooser] = await Promise.all([
 await fileChooser.accept(['/Users/hai.nguyen/Downloads/gen5.png']);
 */
 
+/*
 // Emitted when the DOM is parsed and ready (without waiting for resources)
 page.once('domcontentloaded', () => console.info('✅ DOM is ready'));
 
@@ -75,5 +76,6 @@ page.on('framedetached', () => console.info('✅ Frame is detached'));
 page.once('close', () => console.info('✅ Page is closed'));
 
 await page.goto('https://pptr.dev');
+*/
     
 await page.close();
